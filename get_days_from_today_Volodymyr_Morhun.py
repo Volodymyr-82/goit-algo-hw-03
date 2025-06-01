@@ -9,4 +9,5 @@ def get_days_from_today(date):
     return num_between_days.days
   except ValueError:
     print(f'{date} — невірний формат дати (потрібно вводити YYYY-MM-DD)')
+
 print(get_days_from_today("2021-11-09"))
