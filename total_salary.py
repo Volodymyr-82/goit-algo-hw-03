@@ -4,7 +4,6 @@ def total_salary(path):
    quantity=0
    try:
      with open(path, 'r', encoding="utf-8") as fh:
-      fh_name=purePath(path).name
       lines = [el.strip() for el in fh.readlines()]
       lines.remove('')
       for el in lines:
@@ -23,5 +22,6 @@ def total_salary(path):
      fh_parent=PurePath(path).parent
      print(f"Файл '{fh_name}' - не існує, або  шлях '{fh_parent}' - не вірний")    
 
-path='D:\Morhun_Volodymyr\Mashine_learning\data_project\goit-algo-hw-03\sasary.txt'
+path='D:\Morhun_Volodymyr\Mashine_learning\data_project\goit-algo-hw-03\salary.txt'
+
 total_salary(path)
